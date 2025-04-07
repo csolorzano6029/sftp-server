@@ -1,13 +1,18 @@
+/* eslint-disable @typescript-eslint/no-unsafe-return */
 import { Injectable, Logger } from '@nestjs/common';
 import * as SftpClient from 'ssh2-sftp-client';
 import { ConfigService } from '@nestjs/config';
 import { Readable } from 'stream';
+import { SftpClientService } from 'nest-sftp';
 
 @Injectable()
 export class SftpService {
   /* private readonly sftp: SftpClient; */
   private readonly logger = new Logger(SftpService.name);
-  constructor(private readonly configService: ConfigService) {
+  constructor(
+    private readonly sftpClient: SftpClientService,
+    private readonly configService: ConfigService,
+  ) {
     /* this.sftp = new SftpClient(); */
   }
 
@@ -128,5 +133,44 @@ export class SftpService {
     } finally {
       await this.safeDisconnect(sftp);
     }
+  }
+
+  async listFile(path: string) {
+    return await this.sftpClient.list(path);
+  }
+
+  async dowloadFile(remotePath: string, localPath: string) {
+    return await this.sftpClient.download(remotePath, localPath);
+  }
+
+  async uploadFile(file: Express.Multer.File, remotePath: string) {
+    try {
+      const dirPath = remotePath.endsWith('/') ? remotePath : remotePath + '/';
+      const fileName = file.originalname;
+      const fullPath = dirPath + fileName;
+
+      // Crear un buffer desde el archivo
+      const fileBuffer = file.buffer;
+
+      // Crear un stream desde el buffer
+      //const stream = Readable.from(fileBuffer);
+      //const contents = Buffer.from('hello', 'utf8');
+      //const path = '/home/liberty/ftp-liberty/upload/hello.txt';
+      await this.sftpClient.upload(fileBuffer, fullPath);
+
+      return {
+        success: true,
+        path: fullPath,
+        size: file.size,
+        filename: fileName,
+      };
+    } catch (error) {
+      this.logger.error(error);
+      throw error;
+    }
+  }
+
+  async borrarArchivo(remotePath: string) {
+    return await this.sftpClient.delete(remotePath);
   }
 }

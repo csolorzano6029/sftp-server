@@ -6,4 +6,4 @@ import { SftpController } from './sftp.controller';
   providers: [SftpService],
   controllers: [SftpController],
 })
-export class SftpModule {}
+export class SftpCoreModule {}

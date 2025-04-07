@@ -42,4 +42,19 @@ export class SftpController {
 
     return this.sftpService.createDirectory(path);
   }
+
+  @Post('/uploadfile')
+  @UseInterceptors(FileInterceptor('file')) // Interceptor para manejar la carga de archivos
+  async uploadFile(
+    @Query('remotePath') remotePath: string,
+    @UploadedFile() file: Express.Multer.File,
+  ) {
+    if (!file) {
+      throw new Error(
+        'No file path found. Please ensure the file is uploaded correctly.',
+      );
+    }
+
+    return await this.sftpService.uploadFile(file, remotePath);
+  }
 }
