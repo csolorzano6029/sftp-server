@@ -1,0 +1,134 @@
+<com:SubscriberCreateFromBundle xmlns:com="http://www.comverse.com" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+	<com:input>
+		<productVersion>CCBS3.0</productVersion>
+		<ServerIdLocator>
+			<billingServerId>43</billingServerId>
+			<ratingServerId>9</ratingServerId>
+		</ServerIdLocator>
+		<securityToken>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</securityToken>
+		<userIdName>digitalui</userIdName>
+		<displayUser>jsalcedo</displayUser>
+		<account>
+			<attribs>0</attribs>
+			<accountInternalId changed="true" set="true">25409574</accountInternalId>
+			<dealerId changed="true" set="true">
+				<value>5</value>
+			</dealerId>
+		</account>
+		<newSubscriber>
+			<attribs>0</attribs>
+			<BRevRcvCostCtr changed="true" set="true">
+				<value>15011</value>
+			</BRevRcvCostCtr>
+			<ServiceFname changed="true" set="true">
+				<value>TEST</value>
+			</ServiceFname>
+			<ServiceLname changed="true" set="true">
+				<value>TR</value>
+			</ServiceLname>
+			<BServiceFranchiseTaxCode changed="true" set="true">
+				<value>9</value>
+			</BServiceFranchiseTaxCode>
+			<acctAccessAllowed changed="true" set="true">
+				<value>false</value>
+			</acctAccessAllowed>
+			<addressId changed="true" set="true">
+				<value>3792269043</value>
+			</addressId>
+			<addressTypeId changed="true" set="true">
+				<value>1</value>
+			</addressTypeId>
+			<countryCode changed="true" set="true">
+				<value>328</value>
+			</countryCode>
+			<createDt changed="true" set="true">
+				<value>2025-04-04T17:36:04.125-04:00</value>
+			</createDt>
+			<dealerId changed="true" set="true">
+				<value>5</value>
+			</dealerId>
+			<parentAccountInternalId changed="true" set="true">
+				<value>25409574</value>
+			</parentAccountInternalId>
+			<primaryOfferId>
+				<offerId changed="true" set="true">
+					<value>20023</value>
+				</offerId>
+			</primaryOfferId>
+			<ratingState changed="true" set="true">
+				<value>2</value>
+			</ratingState>
+			<revRcvCostCtr changed="true" set="true">
+				<value>15011</value>
+			</revRcvCostCtr>
+			<serviceFranchiseTaxCode changed="true" set="true">
+				<value>9</value>
+			</serviceFranchiseTaxCode>
+			<extendedData changed="true" set="true">
+				<value>&lt;ExtendedData xmlns:fn="http://www.w3.org/2005/xpath-functions">&lt;Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="DUI_PLANID" xsi:nil="true">&lt;IntegerValue>64&lt;/IntegerValue>&lt;/Parameter>&lt;Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="wfm" xsi:nil="true">&lt;DateValue>20250401T1230.000Z|20250401T1630.000Z&lt;/DateValue>&lt;/Parameter>&lt;/ExtendedData></value>
+			</extendedData>
+		</newSubscriber>
+		<subscriberBundleId>
+			<attribs>0</attribs>
+			<bundleId changed="true" set="true">
+				<value>10154</value>
+			</bundleId>
+		</subscriberBundleId>
+		<extIdList>
+			<isCurrent changed="true" set="true">
+				<value>true</value>
+			</isCurrent>
+			<isFromInventory changed="true" set="true">
+				<value>true</value>
+			</isFromInventory>
+			<serviceExternalId changed="true" set="true">
+				<value>5922193991</value>
+			</serviceExternalId>
+			<serviceExternalIdType changed="true" set="true">
+				<value>101</value>
+			</serviceExternalIdType>
+		</extIdList>
+		<address>
+			<attribs>0</attribs>
+			<addressId changed="true" set="true">
+				<value>3792269043</value>
+			</addressId>
+			<addressTypeId changed="true" set="true">
+				<value>1</value>
+			</addressTypeId>
+		</address>
+		<offerInstances>
+			<attribs>0</attribs>
+			<bundleId changed="true" set="true">
+				<value>10154</value>
+			</bundleId>
+			<offerId changed="true" set="true">
+				<value>20023</value>
+			</offerId>
+			<offerType changed="true" set="true">
+				<value>2</value>
+			</offerType>
+			<selectionType changed="true" set="true">
+				<value>1</value>
+			</selectionType>
+			<extendedData changed="true" set="true">
+				<value>&lt;ExtendedData xmlns:fn="http://www.w3.org/2005/xpath-functions">&lt;Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="AddressNodeId" xsi:nil="true">&lt;StringValue>OLT1&lt;/StringValue>&lt;/Parameter>&lt;/ExtendedData></value>
+			</extendedData>
+		</offerInstances>
+		<selectiveOfferList>
+			<attribs>0</attribs>
+			<offerId changed="true" set="true">
+				<value>20028</value>
+			</offerId>
+		</selectiveOfferList>
+		<optionalOfferList>
+			<attribs>0</attribs>
+			<offerId changed="true" set="true">
+				<value>11816</value>
+			</offerId>
+		</optionalOfferList>
+		<waiveActivation>false</waiveActivation>
+		<autoCommitOrder>false</autoCommitOrder>
+		<generateWorkflow>true</generateWorkflow>
+	</com:input>
+</com:SubscriberCreateFromBundle>
